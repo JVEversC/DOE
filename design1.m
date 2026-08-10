@@ -30,7 +30,7 @@ delta = zeros(2);
 delta(1) = (variaveis(1).Max - variaveis(1).Min)/2;
 delta(2) = (variaveis(2).Max - variaveis(2).Min)/2;
 
-B1 = zeros(9, 1);
+1 = zeros(9, 1);
 for i = 1:9
     prompt = sprintf('Resultado do ensaio %d', i);
     ans = inputdlg(prompt, 'Resultados', [1 45]);
