@@ -74,13 +74,19 @@ for i = 1:9
 end
 
 b = (X' * X) \ (X' * Y);
-
+resposta = modelo(B1(2, 2), B2(2, 2), b);
 % Andando no superfície de resposta
 aux4 = b .* b;
 pivot = sqrt(min(c));
-for i = 1:6
-    caminho(i) = b(i) * pivot;
+for i = 1:2
+    caminho(i) = delta(i) / pivot;
 end
+max = resposta;
+passos = 1;
+while resposta >= max
+    resposta = modelo(B1(2, 2) + passos * caminho(1), B2(2, 2) + passos * caminho(2));
+end
+
 
 prompt = sprintf('%f + %f x(1) + %f x(2) + %f (x1)² + %f (x2)² + %f (x1)(x2)', b(1), b(2), b(3), b(4), b(5), b(6));
 questdlg(prompt, 'Ok', 'Ok');
