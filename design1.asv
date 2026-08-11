@@ -109,7 +109,7 @@ end
 % Os valores otimos
 resposta = modelo(x1 - caminho(1), x2 - caminho(2), b);
 x1 = (passos - 1) * caminho(1) * delta(1) + variaveis(1).Min + delta(1);
-x2 = (passos - 1) * caminho(2) * delta(2) + variaveis(2).Min + delta(2);
+x2 = (x2 - (passos - 1) * caminho(2)) * delta(2) + variaveis(2).Min + delta(2);
 
 % Imprimindo a saida
 prompt = sprintf('O %s maximo eh %f %s quando\nx1 = %f, x2 = %f', resultado.Nome, resposta, resultado.Unidade, x1, x2);
