@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex relatorio1"] 1786469522.28452 "relatorio1.aux" "relatorio1.bbl" "relatorio1" 1786469524.4286 0
+["bibtex relatorio1"] 1786469522.28452 "relatorio1.aux" "relatorio1.bbl" "relatorio1" 1786469955.68158 0
   "./referencias.bib" 1786466381.12633 903 5b8acf680aa4ce13126e113bd8782180 ""
   "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-num.bst" 1543183680 60065 0bf58df5e47e1a6c21c910ec88a893f4 ""
-  "relatorio1.aux" 1786469523.66974 678 f66dc95610dab9976f3f5d912e009247 "pdflatex"
+  "relatorio1.aux" 1786469955.08246 678 f66dc95610dab9976f3f5d912e009247 "pdflatex"
   (generated)
   "relatorio1.bbl"
   "relatorio1.blg"
   (rewritten before read)
-["pdflatex"] 1786469522.43825 "relatorio1.tex" "relatorio1.pdf" "relatorio1" 1786469524.42885 0
+["pdflatex"] 1786469953.97662 "relatorio1.tex" "relatorio1.pdf" "relatorio1" 1786469955.68184 0
   "/etc/texmf/web2c/texmf.cnf" 1786207560.62194 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1698694482 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -215,9 +215,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1786207590.1065 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1786207710 8213327 12a1b0d57975c404b454a3828a868a6e ""
   "ita_rgb.jpg" 1786466423.07822 657741 afbffabc5cf4aa8d70c89d76bbd5f322 ""
-  "relatorio1.aux" 1786469523.66974 678 f66dc95610dab9976f3f5d912e009247 "pdflatex"
+  "relatorio1.aux" 1786469955.08246 678 f66dc95610dab9976f3f5d912e009247 "pdflatex"
   "relatorio1.bbl" 1786469522.43014 524 3026783b4da861f9f67a7c87b046e2ce "bibtex relatorio1"
-  "relatorio1.tex" 1786469508.22076 4277 508ceb5f16d1366af0ed47f25f274c65 ""
+  "relatorio1.tex" 1786469953.15744 4323 b12263952463de8c02234214fa3f3692 ""
   (generated)
   "relatorio1.aux"
   "relatorio1.log"
