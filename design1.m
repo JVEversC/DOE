@@ -81,14 +81,16 @@ end
 b = (X' * X) \ (X' * Y);
 resposta = modelo(0, 0, b);
 
+
 % Andando no superficie de resposta
-
-caminho(1) = 0.05;
-caminho(2) = 0.05 * b(3) / abs(b(2)); 
-
 if b(2) == 0
     b(2) = 1;
 end
+
+caminho(1) = 0.01;
+caminho(2) = 0.01 * b(3) / b(2); 
+
+
 
 valor_max = resposta;
 passos = 0;
@@ -107,10 +109,19 @@ while (resposta >= valor_max && x1_in_range && x2_in_range)
 end
 
 % Os valores otimos
+
 resposta = modelo(x1 - caminho(1), x2 - caminho(2), b);
-x1 = (passos - 1) * caminho(1) * delta(1) + variaveis(1).Min + delta(1);
-x2 = (passos - 1) * caminho(2) * delta(2) + variaveis(2).Min + delta(2);
+x1 = (x1 - caminho(1)) * delta(1) + variaveis(1).Min + delta(1);
+x2 = (x2 - caminho(2)) * delta(2) + variaveis(2).Min + delta(2);
+
+x = - ([2*b(4), b(6); b(6), 2*b(5)] \ [b(2); b(3)]);
+if (x(1) <= 1 && x(1) >= -1 && x(2) <= 1 && x(2) >= -1)
+    x1 = x(1) * delta(1) + variaveis(1).Min + delta(1);
+    x2 = x(2) * delta(2) + variaveis(2).Min + delta(2);
+    resposta = modelo(x1, x2, b);
+end
 
 % Imprimindo a saida
-prompt = sprintf('O %s maximo eh %f %s quando\nx1 = %f, x2 = %f', resultado.Nome, resposta, resultado.Unidade, x1, x2);
+prompt = sprintf('O %s maximo eh %f %s quando\nx1 = %f, x2 = %f', resultado.Nome, resposta, resultado.Unidade, x1, x2 ...
+    );
 questdlg(prompt, 'Valor maximo', 'Ok', 'Ok');
