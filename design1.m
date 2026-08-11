@@ -1,4 +1,4 @@
-clear variaveis
+    clear variaveis
 variaveis(1) = Variavel();
 variaveis(2) = Variavel();
 resultado = Variavel();
@@ -122,6 +122,6 @@ if (x(1) <= 1 && x(1) >= -1 && x(2) <= 1 && x(2) >= -1)
 end
 
 % Imprimindo a saida
-prompt = sprintf('O %s maximo eh %f %s quando\nx1 = %f, x2 = %f', resultado.Nome, resposta, resultado.Unidade, x1, x2 ...
+prompt = sprintf('O %s maximo eh %f %s quando \%s1 = %f %s, %s = %f %s', resultado.Nome, resposta, resultado.Unidade, variaveis(1).Nome, x1,variaveis(1).Unidade, variaveis(2).Nome, x2, variaveis(2).Unidade ...
     );
 questdlg(prompt, 'Valor maximo', 'Ok', 'Ok');
