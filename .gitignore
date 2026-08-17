@@ -6,3 +6,7 @@
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+teste.m
+latextab.txt
+anovatab.txt
+*.asv
