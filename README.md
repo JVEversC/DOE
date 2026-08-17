@@ -11,6 +11,6 @@ O projeto tem como objetivo desenvolver um software munido de ferramentas que po
 - Caio Schaden Ishida
 - Cauã Henrique de Souza
 - Felipe Osternes da Silva
-- Henrique Souza Fagundes
+- Henrique Sousa Fagundes
 - João Victor Evers Cordeiro
 - José Hernando Figueiredo da Silva Filho
