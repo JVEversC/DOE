@@ -6,7 +6,7 @@ function latextab(T)
     nrow = height(T);
 
     %cabeçalho do tabular
-    fprintf(fpw, "\\begin{table}[H] \n \t\\centering \n\n \t\\begin{tabular}{");
+    fprintf(fpw, "\\begin{table}[H] \n \t\\centering\n\n \t\\caption{<<inserir legenda da tabela>>} \n \t\\label{<<inserir referência da tabela>>} \n\n \t\\begin{tabular}{");
 
     for i = 1:ncol
         fprintf(fpw, "c");
